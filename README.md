@@ -21,4 +21,7 @@ On Mac,
 
     $ python -V && which python # confirm python version and path
 
-    $ python -m venv venv
+    $ python -m venv venv # create virtual environment
+    
+    $ source venv/bin/activate # activate virtual environment
+    
