@@ -21,6 +21,7 @@ jobs:
         python-version: '3.6'
 
     - name: Zip the application files
+      working-directory: Application
       run: Compress-Archive .\* app.zip
 
     - name: 'Deploy to Azure Web App'
