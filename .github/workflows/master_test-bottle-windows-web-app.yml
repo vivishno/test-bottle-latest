@@ -20,12 +20,6 @@ jobs:
       with:
         python-version: '3.6'
 
-    - name: Install Python dependencies
-      run: |
-        python3 -m venv env
-        .\env\Scripts\activate
-        pip install -r requirements.txt
-
     - name: Zip the application files
       run: Compress-Archive .\* app.zip
 
@@ -35,4 +29,4 @@ jobs:
         app-name: 'test-bottle-windows-web-app'
         slot-name: 'production'
         publish-profile: ${{ secrets.AzureAppService_PublishProfile_574dc345d95249f69955058943184e3c }}
-        package: '.\myapp.zip'
+        package: '.\app.zip'
