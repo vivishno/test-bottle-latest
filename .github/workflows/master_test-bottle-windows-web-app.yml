@@ -30,4 +30,4 @@ jobs:
         app-name: 'test-bottle-windows-web-app'
         slot-name: 'production'
         publish-profile: ${{ secrets.AzureAppService_PublishProfile_574dc345d95249f69955058943184e3c }}
-        package: '.\app.zip'
+        package: '.\Application\app.zip'
