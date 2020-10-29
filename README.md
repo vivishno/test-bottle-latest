@@ -14,6 +14,9 @@ Use pyenv to create and manage virtual environments
 On Mac,
 
     $ brew install pyenv # this installs pyenv
+    
+    Ensure the following line is in .zshrc in the home folder 
+    PATH=$(pyenv root)/shims:$PATH
 
     $ pyenv install 3.8.2 # this will install python 3.8.2
 
